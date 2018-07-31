@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM slothai/numpy:1.14.3
+FROM slothai/numpy:1.15.0
 
 # Metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -7,6 +7,7 @@ ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.name="Terminal 1 Machine Learning Base" \
     org.label-schema.vcs-url="https://github.com/terminal1/docker-ml" \
     org.label-schema.vendor="Terminal 1 <3it@terminal1.co>" \
     org.label-schema.schema-version="1.0"
